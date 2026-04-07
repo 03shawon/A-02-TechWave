@@ -7,10 +7,11 @@
  }
 
  .gradient-text {
-     background: linear-gradient(to right, #FF31B8, #7131FF);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
- }
+    background: linear-gradient(to right, #FF31B8 0%, #7131FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 
  .gradient-btn {
      background: linear-gradient(90deg, #FF9900 0%, #FF31B8 50%, #7131FF 100%);
