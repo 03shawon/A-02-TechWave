@@ -7,34 +7,33 @@
     <title>TechWave - Podcast Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body>
+<body class="bg-[#0a051d] text-white font-sans">
 
     <main class="min-h-screen">
+        
         <header class="sticky top-0 z-50 bg-[#0a051d]/95 backdrop-blur-sm border-b border-white/5">
-            <nav class="flex justify-between items-center px-6 lg:px-20 py-4 max-w-[1440px] mx-auto">
+            <nav class="flex justify-between items-center px-6 min-[992px]:px-20 py-4 max-w-[1440px] mx-auto">
 
                 <div class="text-3xl font-bold tracking-tight">
                     <span class="text-white">Tech</span><span class="gradient-text">Wave</span>
                 </div>
 
-                <ul class="hidden lg:flex items-center space-x-12 text-sm font-medium text-gray-300">
+                <ul class="hidden min-[992px]:flex items-center space-x-12 text-sm font-medium text-gray-300">
                     <li><a href="#about" class="hover:text-[#FF31B8] transition-colors">About</a></li>
                     <li><a href="#episodes" class="hover:text-[#FF31B8] transition-colors">Episodes</a></li>
                     <li><a href="#host" class="hover:text-[#FF31B8] transition-colors">Host</a></li>
                 </ul>
 
-                <div class="hidden lg:block">
-                    <button
-                        class="gradient-btn group px-6 py-2.5 rounded-full font-semibold text-sm flex items-center gap-2 transition hover:opacity-90">
+                <div class="hidden min-[992px]:block">
+                    <button class="gradient-btn group px-6 py-2.5 rounded-full font-semibold text-sm flex items-center gap-2 transition hover:opacity-90">
                         Subscribe
                         <span class="transition-transform group-hover:translate-x-1">→</span>
                     </button>
                 </div>
 
-                <div class="lg:hidden flex items-center">
+                <div class="min-[992px]:hidden flex items-center">
                     <button class="p-1">
                         <img src="./assets/hamburger-menu.png" class="w-8 h-8 invert" alt="Menu">
                     </button>
@@ -44,45 +43,79 @@
         </header>
 
         <section class="relative flex flex-col items-center text-center py-20 px-6 overflow-hidden">
-
+            
             <div class="absolute inset-0 z-0 opacity-40">
                 <img src="./assets/hero-bg.png" class="w-full h-full object-contain" alt="">
             </div>
 
             <div class="relative z-10 flex flex-col items-center">
-                <div class="relative w-48 h-48 lg:w-64 lg:h-64 flex items-center justify-center">
+                <div class="relative w-48 h-48 min-[992px]:w-64 min-[992px]:h-64 flex items-center justify-center">
                     <img src="./assets/hero-circle.png" class="w-full h-full animate-pulse" alt="Circle View">
-
-                    <img src="./assets/microphone.png" class="absolute w-12 lg:w-16" alt="Microphone">
-
-                    <span
-                        class="absolute top-4 right-4 bg-[#00FF85] text-black text-[10px] font-bold px-3 py-1 rounded-md shadow-[0_0_15px_rgba(0,255,133,0.6)]">
+                    <img src="./assets/microphone.png" class="absolute w-12 min-[992px]:w-16" alt="Microphone">
+                    <span class="absolute top-4 right-4 bg-[#00FF85] text-black text-[10px] font-bold px-3 py-1 rounded-md shadow-[0_0_15px_rgba(0,255,133,0.6)]">
                         NEW
                     </span>
                 </div>
 
                 <div class="mt-10">
-                    <h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight">TechWave</h1>
-                    <p class="text-gray-400 mt-5 max-w-xl mx-auto leading-relaxed text-sm lg:text-base">
+                    <h1 class="text-4xl min-[992px]:text-6xl font-extrabold tracking-tight">TechWave</h1>
+                    <p class="text-gray-400 mt-5 max-w-xl mx-auto leading-relaxed text-sm min-[992px]:text-base">
                         Your daily dose of tech insights, productivity hacks, and personal growth
                     </p>
                 </div>
 
-                <div class="flex flex-col sm:flex-row gap-4 mt-10">
-                    <button
-                        class="gradient-btn px-8 py-3.5 rounded-full flex items-center justify-center font-semibold text-sm transition hover:scale-105 shadow-xl shadow-purple-500/20">
+                <div class="flex flex-col min-[576px]:flex-row gap-4 mt-10">
+                    <button class="gradient-btn px-8 py-3.5 rounded-full flex items-center justify-center font-semibold text-sm transition hover:scale-105 shadow-xl shadow-purple-500/20">
                         <img src="./assets/spotify.png" class="w-5 mr-2" alt=""> Listen On Spotify
                     </button>
-                    <button
-                        class="border border-purple-500/50 px-8 py-3.5 rounded-full font-semibold text-sm transition hover:bg-purple-500/10 flex items-center justify-center">
+                    <button class="border border-purple-500/50 px-8 py-3.5 rounded-full font-semibold text-sm transition hover:bg-purple-500/10 flex items-center justify-center">
                         <img src="./assets/message.png" class="w-5 mr-2" alt="">
                         Subscribe
                     </button>
                 </div>
             </div>
         </section>
+
+        <section id="about" class="py-20 px-6 max-w-7xl mx-auto text-center border-t border-white/5">
+            
+            <div class="mb-16">
+                <h2 class="text-3xl min-[992px]:text-4xl font-bold mb-6">About The Podcast</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto text-sm min-[992px]:text-base leading-relaxed">
+                    TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
+                    We break down complex topics into digestible insights, explore productivity strategies that actually work, 
+                    and share stories of personal growth from industry leaders.
+                </p>
+                <p class="text-gray-400 mt-6 text-sm min-[992px]:text-base">
+                    Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 min-[576px]:grid-cols-2 min-[992px]:grid-cols-4 gap-y-12 min-[992px]:gap-y-0 border-t border-white/5 pt-16">
+                
+                <div class="flex flex-col items-center">
+                    <h3 class="text-4xl min-[992px]:text-5xl font-extrabold text-[#00FF85]">150K+</h3>
+                    <p class="text-gray-500 text-[10px] min-[992px]:text-xs font-bold mt-3 tracking-[3px] uppercase">Monthly Listeners</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-4xl min-[992px]:text-5xl font-extrabold text-[#00FF85]">200+</h3>
+                    <p class="text-gray-500 text-[10px] min-[992px]:text-xs font-bold mt-3 tracking-[3px] uppercase">Episodes Published</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-4xl min-[992px]:text-5xl font-extrabold text-[#00FF85]">4.9★</h3>
+                    <p class="text-gray-500 text-[10px] min-[992px]:text-xs font-bold mt-3 tracking-[3px] uppercase">Average Rating</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-4xl min-[992px]:text-5xl font-extrabold text-[#00FF85]">50+</h3>
+                    <p class="text-gray-500 text-[10px] min-[992px]:text-xs font-bold mt-3 tracking-[3px] uppercase">Industry Experts</p>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
 </body>
-
 </html>
