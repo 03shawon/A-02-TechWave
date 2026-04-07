@@ -6,15 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave - Podcast Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <main>
-        <header>
-            <h1>hello</h1>
+    <main class="min-h-screen">
+        <header class="sticky top-0 z-50 bg-[#0a051d]/95 backdrop-blur-sm border-b border-white/5">
+            <nav class="flex justify-between items-center px-6 lg:px-20 py-4 max-w-[1440px] mx-auto">
+
+                <div class="text-2xl font-bold tracking-tight">
+                    <span class="text-white">Tech</span><span class="text-[#FF31B8]">Wave</span>
+                </div>
+
+                <ul class="hidden lg:flex items-center space-x-12 text-sm font-medium text-gray-300">
+                    <li><a href="#about" class="hover:text-[#FF31B8] transition-colors">About</a></li>
+                    <li><a href="#episodes" class="hover:text-[#FF31B8] transition-colors">Episodes</a></li>
+                    <li><a href="#host" class="hover:text-[#FF31B8] transition-colors">Host</a></li>
+                </ul>
+
+                <div class="hidden lg:block">
+                    <button
+                        class="gradient-btn group px-6 py-2.5 rounded-full font-semibold text-sm flex items-center gap-2 transition hover:opacity-90">
+                        Subscribe
+                        <span class="transition-transform group-hover:translate-x-1">→</span>
+                    </button>
+                </div>
+
+                <div class="lg:hidden flex items-center">
+                    <button class="p-1">
+                        <img src="./assets/hamburger-menu.png" class="w-8 h-8 invert" alt="Menu">
+                    </button>
+                </div>
+
+            </nav>
         </header>
     </main>
+
 </body>
 
 </html>
